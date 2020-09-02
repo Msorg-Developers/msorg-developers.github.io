@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="css/select2.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/skins/orange.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <!-- Live Style Switcher - demo only -->
     <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
     <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
@@ -176,48 +177,82 @@
                 <!-- Section Title Starts -->
                 <div class="row text-center">
                     <div class="col-md-3"></div>
-                   <div class="col-md-5">
-                       <br>
-                    
+                    <div class="col-md-6" style="border-radius: 50%; border: 2px gold ;">
+                   <br>
+                <!-- Section Title Ends -->
+                  
+                <!-- Section Content Starts -->
                 
-                    <!-- Section Title Ends -->
-                      
-                    <!-- Section Content Starts -->
-                    
-                        <!-- form Starts -->
-                        <div class="" style=" border-radius: 20px; padding: 2%;margin: 2%; background-color: silver;">
-                            <form action="">
-                                <h3 class="title-about" style="color: rgb(216, 130, 18);"><span><i class="fa fa-user"></i></span> Sign In</h3>
-           
-                               <div class="form-group ">
-                                  <input class=" " type="text" placeholder="Your email" style="width: 250px;">
-                               </div>
-                               <div class="form-group" >
-                                <input class=" " type="password" placeholder="Password" style="width: 250px;">
-                             </div>
-                               <div class="form-group">
-                                   <button class="btn btn-primary" style="background-color: #fd9346;" type="submit">Sign in</button>
-                               </div>
-                               
-                               <a style=" margin-left: -160px; padding: 2%; color: brown" href="">Forgot Password</a>
-                            
-                            </form>
+                    <!-- form Starts -->
+                    <div class="" style="border-radius: 20px; padding: 2%;margin: 2%; background-color: silver;">
+                        <form action="">
+                            <h3 class="title-about" style="color: rgb(216, 130, 18);"><span><i class="fa fa-user-plus"></i></span> Register</h3>
+       
+                           <div class="form-group">
+                              <input class=" " type="text" placeholder="Username" style="width: 250px;">
                            </div>
-                           <!-- form Ends -->
-                        <!-- Content Starts -->
-                        <div class="">
-                            <h3 class="title-about" ><span>NOT YET A MEMBER?</span></h3>
-    
-                            <p class="about-text"><a href="#">Register</a> here and start your wealth creation journey</p>
-                           
-                          <br>
-                        </div>
-                        </div>
+                           <div class="form-group">
+                            <input class=" " type="email" placeholder="Email" style="width: 250px;">
+                         </div>
+                         <div class="form-group">
+                            <input class=" " type="text" placeholder="Referal Username (Optional)" style="width: 250px;">
+                         </div>
+                         <div class="form-group">
+                            <input class=" " type="number" placeholder="Phone" style="width: 250px;">
+                         </div>
+                        
+                           <div class="form-group">
+                            <input class=" " type="password" placeholder="Password" style="width: 250px;">
+                         </div>
+                         <div class="form-group">
+                            <input class=" " type="password" placeholder="Repeat Password" style="width: 250px;">
+                         </div>
+                         <div class="form-group" style="align-content: left; align-items: left; padding-left: 0%;">
+                            <label class="about-ext" style="color: rgb(22, 19, 19);" for="">Package type</label> <br>
+                            <label for="" style="  color: rgb(201, 127, 30);"><input id="bronze" name="package" type="radio"> Bronze</label>
+                            <label for="" style=" color: grey;"><input name="package" id="silver" type="radio"> Silver</label>
+                            <label for="" style=" color: gold;"><input name="package" id="gold" type="radio"> Gold</label>
+                            <label id="amount" style="width: 100px; margin: 1%;padding-left: 2%;padding-right: 2%; background-color: green;" for="">$0</label>
+                            </div>
+                           <div class="form-group">
+                               <button class="btn btn-primary" style="background-color: #fd9346;"  type="submit">Proceed to checkout</button>
+                           </div>
+                        </form>
+                        <script >
+$(function(){
+ $('#bronze').click(function(){
+$('#amount').text("$"+ 10);
+ 
+ });
+ $('#silver').click(function(){
+$('#amount').text("$"+ 50);
+ 
+ });
+ $('#gold').click(function(){
+$('#amount').text("$"+ 100);
+ 
+ });
+});
+
+
+                        </script>
+                       </div></div><br>
+                       <!-- form Ends -->
+                    <!-- Content Starts -->
+                   
                     <!-- Content Ends -->
                   
                 
                 <!-- Section Content Ends -->
             </div>
+            <div class="row center">
+               <div class="col-md-3"></div>
+               <div class="col-md-6"> <h3 class="title-about" ><span>ALREADY A MEMBER?</span></h3>
+
+                <p class="about-text"><a href="#">Login</a> now and continue your wealth creation journey</p>
+               
+              <br></div>
+                </div>
             </div>
         </section>
         <!-- About Section Ends -->
